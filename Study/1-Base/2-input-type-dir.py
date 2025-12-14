@@ -6,6 +6,7 @@ print(type(enter))
 
 print(user_enter + 10)
 
+# Преобразование типов
 x = 5.99
 x = int(x)
 print(x)  # 5

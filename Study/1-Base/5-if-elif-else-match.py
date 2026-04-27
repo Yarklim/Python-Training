@@ -20,3 +20,16 @@ elif age >= 18:
     print("Подросток")
 else:
     print("Ребенок")
+
+# ========= match =========
+score = 85
+
+match score:
+    case s if s >= 90:
+        print("Оценка отлично")
+    case s if s >= 75:
+        print("Оценка хорошо")
+    case s if s >= 60:
+        print("Оценка удовлетворительно")
+    case _:
+        print("Тест не сдан")

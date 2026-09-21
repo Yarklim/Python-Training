@@ -14,10 +14,11 @@ start_idx = url.index("www.") + 4
 domain = url[start_idx:]  # google.com
 
 negative_slice = url[-4:]  # .com
+reverse_str = url[::-1]  # moc.elgoog.www//:sptth
 
 
 str_2 = "C1, C2, C3, C4, C5"
 some_str = str_2[::2]  # C,C,C,C,C
 numbers_str = str_2[1::4]  # 12345
 
-print(negative_slice)
+print(reverse_str)

@@ -54,8 +54,6 @@ for i, el in enumerate(languages):
 # 2 GO
 
 # ==================== Метода списка =======================
-
-
 my_list = str.split()  # по умолчанию разделяет по пробелам
 print(my_list)  # ['Python', 'is', 'a', 'programming', 'language']
 

@@ -4,6 +4,7 @@ print(str[-1])  # o
 # print(str[10])  # ошибка!
 
 # Slice
+# Синтаксис срезов - скобки и три значения дапазона [start:stop:step] чкркз двлеточие
 item = str[0:4]  # 'hell'
 item_2 = str[2:]  # 'llo'
 

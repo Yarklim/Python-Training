@@ -26,13 +26,17 @@ replaced2 = toReplace.replace(
 # Список методов есть в шпаргалке!
 # ====================================================
 
-# =============== Форматирование строк ===============
+# =============== Литералы строк ===============
 x1 = 'Hello ' + 'World!'  # 'Hello World'
 x2 = """
 Hello
 """  # многострочный вывод
+x3 = r'C:\\Users\name\Desctop'  # литерал r, чтобы \n не перенес строку
 
-
+# =============== Форматирование строк ===============
 name = 'Yar'
-age = '54'
-print(f'User name: {name} | User age: {age}')
+rating = 4.95124
+# greeting2 = 'Hello {}, your rating is: {}'.format(name, rating)
+greeting2 = f'User name: {name} | User rating: {rating:.2f}'  # User name: Yar | User rating: 4.95
+
+print(greeting2)

@@ -27,6 +27,9 @@ replaced2 = toReplace.replace(
 # ====================================================
 
 # =============== Форматирование строк ===============
+x = "Hello " "World!"  # 'Hello World'
+x = "Hello " + "World!"  # 'Hello World'
+
 name = "Yar"
 age = "54"
 print(f"User name: {name} | User age: {age}")

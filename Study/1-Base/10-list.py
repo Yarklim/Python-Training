@@ -1,4 +1,4 @@
-list_1 = ["str1", 15, 6.2, "str2"]
+list_1 = ['str1', 15, 6.2, 'str2']
 
 print(list_1[1])  # 15
 print(len(list_1))  # 4
@@ -31,7 +31,7 @@ nums_list.sort()  # сортировка списка по возрастани�
 print(nums_list)  # [55, 2, 5, 9, 36, 101]
 nums_list.sort(reverse=True)  # сортировка списка по убыванию
 print(nums_list)  # [101, 55, 36, 9, 5, 2]
-str = "Python is a programming language"
+str = 'Python is a programming language'
 
 all_nums_list = [i for i in range(5)]  # заполняется числами от 0 до 4 (индексы)
 print(all_nums_list)  # [0, 1, 2, 3, 4]
@@ -46,7 +46,7 @@ numbers = [4, 6, 98, 45]
 for i in numbers:
     print(i)
 
-languages = ["TS", "Python", "GO"]
+languages = ['TS', 'Python', 'GO']
 for i, el in enumerate(languages):
     print(i, el)
 # 0 TS
@@ -57,9 +57,9 @@ for i, el in enumerate(languages):
 my_list = str.split()  # по умолчанию разделяет по пробелам
 print(my_list)  # ['Python', 'is', 'a', 'programming', 'language']
 
-ip = "127.0.0.1"
-ip_list = ip.split(".")  # разделитель по точке
+ip = '127.0.0.1'
+ip_list = ip.split('.')  # разделитель по точке
 print(ip_list)  # ['127', '0', '0', '1']
 
-ip_str = ".".join(ip_list)  # строка из списка, склеивает через "."
+ip_str = '.'.join(ip_list)  # строка из списка, склеивает через "."
 print(ip_str)  # 127.0.0.1

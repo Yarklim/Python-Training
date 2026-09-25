@@ -33,5 +33,22 @@ while index < len(user_input):
 else:
     no_t_char = True
 
-print(vowels_count)
-print(no_t_char)
+# print(vowels_count)
+# print(no_t_char)
+# ----------------------------
+palindrome = 'racecar'
+
+i = 0
+j = len(palindrome) - 1
+
+is_palindrome = True
+
+while i < j:
+    if palindrome[i] != palindrome[j]:
+        is_palindrome = False
+        break
+
+    i += 1
+    j -= 1
+
+print(is_palindrome)

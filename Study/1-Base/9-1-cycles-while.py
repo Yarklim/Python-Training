@@ -1,15 +1,3 @@
-# =============== FOR ===============
-# for i in range(3):
-#     print(i, 'Hello')
-
-# # ---- от и до ----
-# for i in range(2, 5):
-#     print(i, 'Hello')
-
-# # ---- от и до с шагом ----
-# for i in range(1, 7, 2):
-#     print(i, 'Hello')
-
 # ============== WHILE ==============
 user_input = input('Enter something:\n')
 
@@ -33,8 +21,8 @@ while index < len(user_input):
 else:
     no_t_char = True
 
-# print(vowels_count)
-# print(no_t_char)
+print(vowels_count)
+print(no_t_char)
 # ----------------------------
 palindrome = 'racecar'
 
@@ -51,4 +39,18 @@ while i < j:
     i += 1
     j -= 1
 
-print(is_palindrome)
+# print(is_palindrome)
+# ----------------------------
+el = ''
+count = 10
+i = 1
+
+while i <= count:
+    spaces = ' ' * (count - i)
+    stars = ' '.join('*' * i)
+
+    el += spaces + stars + '\n'
+
+    i += 1
+
+print(el)

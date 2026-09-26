@@ -39,3 +39,16 @@ for i, el in enumerate(languages):
 # 0 TS
 # 1 Python
 # 2 GO
+
+# --------------------------------------------------------------
+prices = [5.25, 15, 100.5, 17.15]
+discount_prices = []
+discount = 0.9  # 10%
+
+i = 0
+
+while i < len(prices):
+    discount_prices += [round(prices[i] * discount, 2)]
+    i += 1
+
+print(discount_prices)

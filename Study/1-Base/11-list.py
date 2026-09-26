@@ -5,6 +5,16 @@ print(len(list_1))  # 4
 print(15 in list_1)  # true
 print(list(range(5)))
 
+list_2 = [1, 2, 3, 4]
+print(list_2)  # [1, 2, 3, 4]
+print(id(list_2))  # 4654378164224
+list_2 = list_2 + [5, 6, 7]  # Получим новый список!
+print(list_2)  # [1, 2, 3, 4, 5, 6, 7]
+print(id(list_2))  # 4654378160704
+list_2 += [8, 9, 10]  # Расширится старый список!
+print(list_2)  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(id(list_2))  # 4654378160704
+
 nums_list = [2, 5, 7, 1.8, 9, 36]
 print(sum(nums_list))  # 60.8
 print(min(nums_list))  # 1.8
@@ -53,7 +63,7 @@ for i, el in enumerate(languages):
 # 1 Python
 # 2 GO
 
-# ==================== Метода списка =======================
+# ==================== Методы списка =======================
 my_list = str.split()  # по умолчанию разделяет по пробелам
 print(my_list)  # ['Python', 'is', 'a', 'programming', 'language']
 

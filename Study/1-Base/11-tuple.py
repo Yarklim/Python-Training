@@ -25,7 +25,7 @@ green = (0, 255, 0)
 # --------------------------------------
 resolution = (1920, 1080)
 
-width, height = resolution
+width, height = resolution  # распаковка переменных
 
 print(width)  # 1920
 print(height)  # 1080
@@ -80,3 +80,15 @@ if (3, 5) in visited:
     print('Уже посещали')
 
 # --------------------------------------
+# Распаковка, упаковка и множественное присваивание переменных.
+
+date = (15, 'March', 1972)
+
+day, month, year = date  # Unpacking
+
+day, *other = date  # * - packing
+
+day, month, year = 15, 'March', 1972  # Множественное присваивание
+
+print(f'{day} {month}, {year}')  # 15 March, 1972
+print(other)  # ['March', 1972]

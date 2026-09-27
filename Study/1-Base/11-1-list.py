@@ -1,9 +1,14 @@
 list_1 = ['str1', 15, 6.2, 'str2']
+print(list_1)
 
 print(list_1[1])  # 15
 print(len(list_1))  # 4
 print(15 in list_1)  # true
 print(list(range(5)))
+
+new_list = list_1[:]  # копия списка
+new_list[0] = 'JS'
+print(new_list)  # ['JS', 15, 6.2, 'str2']
 
 list_2 = [1, 2, 3, 4]
 print(list_2)  # [1, 2, 3, 4]
@@ -51,4 +56,4 @@ while i < len(prices):
     discount_prices += [round(prices[i] * discount, 2)]
     i += 1
 
-print(discount_prices)
+print(discount_prices)  # [4.73, 13.5, 90.45, 15.43]

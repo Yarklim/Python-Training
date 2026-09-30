@@ -102,3 +102,34 @@ for i, j, k in widgets_2:
     print(j, end='')
     print(k, end='')
     print()
+
+# -------------------------------------------
+country_codes = ['754', '690', '450']
+
+products = [
+    '4506436054267',
+    '7547682958186',
+    '6900626469201',
+    '7543817559796',
+    '7544194259711',
+    '6900590565047',
+    '6901237511586',
+    '4502714135954',
+    '4500295752923',
+    '6901237511587',
+]
+
+categories = []
+
+for country_code in country_codes:
+    temp_list = []
+
+    for product in products:
+        code = product[:3:]
+
+        if code == country_code:
+            temp_list.append(product)
+
+    categories.append(temp_list)
+
+print(categories)

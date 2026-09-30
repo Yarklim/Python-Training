@@ -81,3 +81,17 @@ for item in scraped_prices:
         new.append(item)
 
 print(new)
+
+# ================ FOR вложенный в FOR =================
+
+widgets_2 = [
+    ['1', '2', '3'],
+    ['4', '5', '6'],
+    ['7', '8', '9'],
+    ['*', '0', '#'],
+]
+
+for block in widgets_2:
+    for item in block:
+        print(item.center(3), end='')
+    print()

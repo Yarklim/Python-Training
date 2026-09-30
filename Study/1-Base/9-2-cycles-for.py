@@ -95,3 +95,10 @@ for block in widgets_2:
     for item in block:
         print(item.center(3), end='')
     print()
+
+# ------------ распаковка списка ------------
+for i, j, k in widgets_2:
+    print(i, end='')
+    print(j, end='')
+    print(k, end='')
+    print()

@@ -9,14 +9,20 @@ z = list(range(20, 1, -2))  # [20, 18, 16, 14, 12, 10, 8, 6, 4, 2]
 
 y_item_index = y.index(6)  # 2
 # ----------------------------------------------------
-for i in range(len(currencies)):
-    el_value = currencies[i][1]
-    print(el_value)
+for i in range(len(currencies) - 1):
+    if currencies[i][0] == 'PHP':
+        currencies.pop(i)
+
+print(currencies)
 
 # # ---- от и до ----
 # for i in range(2, 9):
-#     print(i, 'Hello')
+#     print(i)
 
 # # ---- от и до с шагом ----
 # for i in range(1, 7, 2):
-#     print(i, 'Hello')
+#     print(i)
+
+# # -------------------------
+# for _ in range(3):
+#     print('Hello')

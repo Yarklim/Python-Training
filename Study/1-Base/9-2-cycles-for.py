@@ -30,12 +30,24 @@ widgets = [
     '#',
 ]
 
-for count, item in enumerate(widgets, start=1):
+for i, item in enumerate(widgets, start=1):
     print(item.center(3), end='')
 
-    if count % 3 == 0:
+    if i % 3 == 0:
         print()
 
+# ------------------------------------------------------------
+
+tasks = ['Learn Python', 'Do homework', 'Read book', 'Buy food']
+done = [False, True, False, True]
+
+for task, status in zip(tasks, done):
+    if status:
+        mark = '[x]'
+    else:
+        mark = '[ ]'
+
+    print(f'{mark} {task}')
 # ------------------------------------------------------------
 
 scraped_prices = [

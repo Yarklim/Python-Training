@@ -7,3 +7,5 @@ new_dir = path_1 + 'temp'
 
 if not os.path.exists(new_dir):
     os.mkdir(new_dir)
+
+# Набор команд для os.path находится в файле usefull_os-funcs.py

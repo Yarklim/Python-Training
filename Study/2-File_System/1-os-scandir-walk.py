@@ -1,5 +1,7 @@
 import os
 
+# Набор команд для модуля os находится в файле usefull_os-funcs.py
+
 path_1 = (
     'C:\\Users\\Yarklim\\Desktop\\Python\\Python-Training\\Study\\2-File_System\\data'
 )

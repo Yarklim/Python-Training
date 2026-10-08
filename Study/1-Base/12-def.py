@@ -2,7 +2,7 @@ def cube(value):
     if isinstance(value, (int, float)):
         return value**3
 
-    return 'Argument is not a number'
+    return 'Value is not a number'
 
 
 def is_number(value):
@@ -13,5 +13,7 @@ def is_number(value):
         return False
 
 
-print(cube(3))
-print(cube('5'))
+print(cube(3))  # 27
+print(cube('5'))  # 'Value is not a number'
+print(is_number('123'))  # True
+print(is_number('abc'))  # False

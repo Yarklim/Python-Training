@@ -1,3 +1,8 @@
+from data import constants
+
+print(constants.PROGRAMMING_LANGUAGES[0])
+
+
 def cube(value):
     if isinstance(value, (int, float)):
         return value**3

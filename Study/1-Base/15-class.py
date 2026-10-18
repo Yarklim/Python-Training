@@ -56,3 +56,6 @@ cart1.add_item(Item('MacBook Pro', 3500))
 
 cart1.show_items()
 print(f'Total: ${cart1.get_total()}')
+
+
+# ------------------------------------------
